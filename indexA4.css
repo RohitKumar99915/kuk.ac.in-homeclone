@@ -195,7 +195,7 @@
 
         .midweb {
             margin: 10px 25px;
-            height: 650px;
+            height: auto;
             display: flex;
             font-size: medium;
         }
