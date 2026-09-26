@@ -139,14 +139,15 @@
             justify-content: center;
             background-color: #374e78;
         }
-        .main{
-            margin:10px;
+
+        .main {
+            margin: 10px;
         }
 
         .bulletin,
         .admission {
             margin: 10px;
-            
+
             display: flex;
             align-items: center;
             width: 100%;
@@ -163,6 +164,7 @@
             border: 1px solid rgb(240, 233, 233);
             white-space: nowrap;
         }
+
         .bullettext,
         .admissiontext {
             background-color: white;
@@ -190,73 +192,89 @@
             animation: Bullet 20s linear infinite;
             font-weight: bold;
         }
-        .midweb{
-            margin:10px 25px;
-            height:650px;
+
+        .midweb {
+            margin: 10px 25px;
+            height: 650px;
             display: flex;
             font-size: medium;
         }
-        article{
-            width:65%;
+
+        article {
+            width: 65%;
             box-sizing: border-box;
         }
-        .article-inside{
+
+        .article-inside {
             display: flex;
         }
+
         aside {
             height: 100%;
-            width:35%;
+            width: 35%;
             box-sizing: border-box;
             border-left: 4px dotted #a80000;
 
         }
-        aside h2{
-            padding:0px 10px;
-        }
-        .aside-content{
+
+        aside h2 {
             padding: 0px 10px;
         }
-        .midweb-heading{
+
+        .aside-content {
+            padding: 0px 10px;
+        }
+
+        .midweb-heading {
             color: #122a51;
         }
-        .midweb-heading h2::after{
+
+        .midweb-heading h2::after {
             content: "";
             display: block;
             width: 80px;
             border-bottom: 2px solid #a80000;
             margin-top: 8px;
         }
-        .vcsir2{
+
+        .vcsir2 {
             width: 30%;
         }
-        .vcsir2_photo{
-            height:320px;
+
+        .vcsir2_photo {
+            height: 320px;
             width: 100%;
         }
-        .article-right{
-            width:70%;
-            margin:0px 10px;
+
+        .article-right {
+            width: 70%;
+            margin: 0px 10px;
         }
-        .article-right p,.aside-content p{
+
+        .article-right p,
+        .aside-content p {
             text-align: justify;
             margin-top: 20px;
         }
-        .read-button{
+
+        .read-button {
             color: white;
             background-color: #8c1414;
             padding: 10px 25px;
-            border:1px solid #8c1414;
+            border: 1px solid #8c1414;
             border-radius: 3px;
             font-size: large;
             margin-top: 30px;
         }
-        #vcsir-name{
+
+        #vcsir-name {
             margin: 0px;
             font-size: 22px;
             font-weight: bold;
             color: gray;
         }
-        .vision{
+
+        .vision {
             content: "";
             display: block;
             width: 60px;
@@ -264,14 +282,97 @@
             border-bottom: 1.5px solid #a80000;
             margin-top: 8px;
         }
-        .mission{
-           content: "";
+
+        .mission {
+            content: "";
             display: block;
             width: 60px;
             color: #a80000;
             border-bottom: 1.5px solid #a80000;
-            margin-top: 8px; 
+            margin-top: 8px;
         }
+
+        .taketour-container {
+            width: 100%;
+            height: auto;
+            background-color: #e7e7e7;
+        }
+
+        .tourcontent {
+            display: flex;
+            width: 95%;
+            margin:10px 25px;
+            align-content: center;
+        }
+
+        .tourleft {
+            border: 1px solid black;
+        }
+
+        .tourmid {
+            margin-top: 0px;
+            height:750px;
+        }
+
+        .tourmid h3 {
+            text-align: center;
+            background-color: #c00000;
+            padding: 10px;
+            margin: 10px 40px;
+            border: 2px solid #122a51;
+            border-radius: 5px;
+            color: white;
+        }
+        .tourmid p{
+            margin-top: 50px;
+        }
+
+        .tourmid h3:hover {
+            background-color: rgb(235, 229, 229);
+        }
+
+        .tourright {
+
+            width: auto;
+            min-width: 0;
+            margin-top: 0px;
+        }
+
+        .tourright-container {
+            border: 2px solid gray;
+            border-radius: 6px;
+            height: 300px;
+            width: auto;
+            min-width: 0;
+            margin-top: 20px;
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+
+        .tourright-container marquee {
+            display: block;
+            width: 100%;
+        }
+
+        .tourright-container ul {
+            box-sizing: border-box;
+            max-width: 100%;
+            white-space: normal;
+            overflow-wrap: anywhere;
+        }
+
+        .tourright h1 {
+            text-align: center;
+            width: auto;
+            height: auto;
+            margin-top: 0px;
+            background-color: #c00000;
+            padding: 10px;
+            border: 2px solid #122a51;
+            border-radius: 5px;
+            color: white;
+        }
+
         @keyframes Bullet {
             from {
                 transform: translateX(100%);
@@ -369,29 +470,42 @@
             .nav2link.active {
                 display: flex;
             }
-            .midweb{
+
+            .midweb {
                 height: auto;
                 flex-direction: column;
             }
+
             article {
                 width: 100%;
             }
+
             aside {
                 width: 100%;
                 height: auto;
                 border-left: none;
             }
+
             .article-inside {
                 flex-direction: column;
             }
+
             .vcsir2,
             .article-right {
                 width: 100%;
             }
-            .vcsir2_photo{
+
+            .vcsir2_photo {
                 width: 100%;
-                height:auto;
+                height: auto;
             }
 
-
+            .taketour-container {
+                margin: 40px;
+                height: auto;
+                background-color: #e7e7e7;
+            }
+            .tourcontent{
+                flex-direction: column;
+            }
         }
