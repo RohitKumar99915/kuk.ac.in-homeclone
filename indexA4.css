@@ -13,7 +13,36 @@
             justify-content: center;
             align-items: center;
             height: 40px;
+        }
+        .dropdown {
+            display: inline-block;
+            position: relative;
+        }
 
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: white;
+            width: 350px;
+            overflow-y: scroll;
+            height: 350px;
+        }
+
+        .dropdown-menu a {
+            display: block;
+            color: black;
+            padding: 12px;
+            text-decoration:none;
+            border-top: 1px solid gray;
+        }
+        .dropdown-menu a:hover{
+            background-color: #c00000;
+        }
+
+        .dropdown:hover .dropdown-menu {
+            display: block;
         }
 
         .head-div {
@@ -301,17 +330,13 @@
         .tourcontent {
             display: flex;
             width: 95%;
-            margin:10px 25px;
+            margin: 10px 25px;
             align-content: center;
-        }
-
-        .tourleft {
-            border: 1px solid black;
         }
 
         .tourmid {
             margin-top: 0px;
-            height:750px;
+            height: 750px;
         }
 
         .tourmid h3 {
@@ -323,7 +348,8 @@
             border-radius: 5px;
             color: white;
         }
-        .tourmid p{
+
+        .tourmid p {
             margin-top: 50px;
         }
 
@@ -372,59 +398,70 @@
             border-radius: 5px;
             color: white;
         }
-        footer{
+
+        footer {
             width: 100%;
             height: 570px;
             background-color: #374e78;
         }
-        .foot-upper{
+
+        .foot-upper {
             display: flex;
-            gap:90px;
+            gap: 90px;
             justify-content: center;
             align-items: center;
         }
-        .upfoot-right{
+
+        .upfoot-right {
             text-align: center;
             color: white;
-            margin:10px;
-            padding:10px;
+            margin: 10px;
+            padding: 10px;
         }
-        .upfoot-right a{
-            color:white;
+
+        .upfoot-right a {
+            color: white;
             border: 1px solid white;
             border-radius: 50%;
             font-size: 30px;
         }
-        .upfoot-right a:hover{
-            background-color:#c00000;
+
+        .upfoot-right a:hover {
+            background-color: #c00000;
         }
-        .footmid{
-            display:flex;
-            gap:30px;
-            color:white;
-            padding:10px;
-            margin:10px;
+
+        .footmid {
+            display: flex;
+            gap: 30px;
+            color: white;
+            padding: 10px;
+            margin: 10px;
         }
-        .footmid-right{
-            margin-top:100px;
+
+        .footmid-right {
+            margin-top: 100px;
         }
-        .upfoot-left h2,.footmid h2{
+
+        .upfoot-left h2,
+        .footmid h2 {
             border-bottom: 2px solid red;
             width: 20px;
-            margin:10px;
-            padding:20px;
+            margin: 10px;
+            padding: 20px;
         }
-        .upfoot-left{
+
+        .upfoot-left {
             color: white;
             width: auto;
-            padding:10px;
-            margin:10px;
+            padding: 10px;
+            margin: 10px;
         }
-        .footdown{
+
+        .footdown {
             background-color: #122a51;
-            margin:30px;
+            margin: 30px;
             padding: 20px;
-            color:white;
+            color: white;
             text-align: center;
         }
 
@@ -561,33 +598,41 @@
                 height: auto;
                 background-color: #e7e7e7;
             }
-            .tourcontent{
+
+            .tourcontent {
                 flex-direction: column;
-                
+                height: auto;
+
             }
-            footer{
+
+            footer {
                 height: auto;
             }
-            .foot-upper{
+
+            .foot-upper {
                 flex-direction: column;
-                gap:0px;
+                gap: 0px;
             }
-            .footmid{
+
+            .footmid {
                 flex-direction: column;
-                gap:0px;
-                width:100%;
+                gap: 0px;
+                width: 100%;
                 margin-left: 80px;
             }
-            .footmid-right{
-                margin:0px;
+
+            .footmid-right {
+                margin: 0px;
             }
-            .footmid-left{
-                margin:0px;
-                
+
+            .footmid-left {
+                margin: 0px;
+
             }
-            .upfoot-left{
-                margin-left:80px;
-                width:100%;
+
+            .upfoot-left {
+                margin-left: 80px;
+                width: 100%;
             }
 
         }
