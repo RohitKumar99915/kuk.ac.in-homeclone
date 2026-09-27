@@ -372,6 +372,62 @@
             border-radius: 5px;
             color: white;
         }
+        footer{
+            width: 100%;
+            height: 570px;
+            background-color: #374e78;
+        }
+        .foot-upper{
+            display: flex;
+            gap:90px;
+            justify-content: center;
+            align-items: center;
+        }
+        .upfoot-right{
+            text-align: center;
+            color: white;
+            margin:10px;
+            padding:10px;
+        }
+        .upfoot-right a{
+            color:white;
+            border: 1px solid white;
+            border-radius: 50%;
+            font-size: 30px;
+        }
+        .upfoot-right a:hover{
+            background-color:#c00000;
+        }
+        .footmid{
+            display:flex;
+            gap:30px;
+            color:white;
+            padding:10px;
+            margin:10px;
+        }
+        .footmid-right{
+            margin-top:100px;
+        }
+        .upfoot-left h2,.footmid h2{
+            border-bottom: 2px solid red;
+            width: 20px;
+            margin:10px;
+            padding:20px;
+        }
+        .upfoot-left{
+            color: white;
+            width: auto;
+            padding:10px;
+            margin:10px;
+        }
+        .footdown{
+            background-color: #122a51;
+            margin:30px;
+            padding: 20px;
+            color:white;
+            text-align: center;
+        }
+
 
         @keyframes Bullet {
             from {
@@ -507,5 +563,31 @@
             }
             .tourcontent{
                 flex-direction: column;
+                
             }
+            footer{
+                height: auto;
+            }
+            .foot-upper{
+                flex-direction: column;
+                gap:0px;
+            }
+            .footmid{
+                flex-direction: column;
+                gap:0px;
+                width:100%;
+                margin-left: 80px;
+            }
+            .footmid-right{
+                margin:0px;
+            }
+            .footmid-left{
+                margin:0px;
+                
+            }
+            .upfoot-left{
+                margin-left:80px;
+                width:100%;
+            }
+
         }
